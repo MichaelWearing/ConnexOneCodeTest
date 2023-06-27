@@ -18,9 +18,8 @@ router.get("/", (req: Request, res: Response<TimeResponse>) => {
         type: "number",
       },
     },
-    required: ["epoch"],
+    required: [getCurrentTimeInSeconds().toString()],
     type: "object",
-    whereDoIPutThis: getCurrentTimeInSeconds(),
   });
 });
 

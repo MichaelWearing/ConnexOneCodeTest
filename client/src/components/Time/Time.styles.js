@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: #50b79b;
 
+  position: fixed;
+
   display: flex;
   flex-direction: column;
   align-items: center;

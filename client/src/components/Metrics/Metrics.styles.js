@@ -3,6 +3,10 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   background: #fefefe;
 
+  position: fixed;
+  right: 0;
+  overflow: overlay;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +20,5 @@ export const TextWrapper = styled.code`
 
   height: 90vh;
   overflow: overlay;
-  margin: 0vh 2vh;
-
-  font-size: 12px;
+  font-size: 11px;
 `;

@@ -11,7 +11,7 @@ export const fetchTime = async (
     });
     const json = await response.json();
     setLoadingTime(false);
-    setTime(json.whereDoIPutThis);
+    setTime(json.required);
   } catch (err) {
     console.error("Error = ", err);
   }

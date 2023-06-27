@@ -11,7 +11,9 @@ const Metrics: React.FC<MetricType> = ({ metrics, loadingMetrics }) => {
       {loadingMetrics ? (
         <TextWrapper>Loading</TextWrapper>
       ) : (
-        <TextWrapper>{metrics}</TextWrapper>
+        <pre>
+          <TextWrapper>{metrics}</TextWrapper>
+        </pre>
       )}
     </Wrapper>
   );
