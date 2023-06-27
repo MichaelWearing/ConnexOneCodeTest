@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
 `;
 
 export const TextWrapper = styled.code`
+  color: #343f57;
+
   height: 90vh;
   overflow: overlay;
   margin: 0vh 2vh;
