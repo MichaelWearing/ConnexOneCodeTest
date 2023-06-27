@@ -3,24 +3,24 @@
 ## Setup
 
 ### Client
-1. `cd client`
-2. `npm i`
-3. `npm run start`
+Starting in the root dir;
 
-A .env file is needed in the root of the client dir\
+1. `cd client`
+2. A .env file should be created in the root of the client dir, and the below keys should be added\
 `REACT_APP_AUTH_TOKEN=mysecrettoken`\
 `REACT_APP_SERVER=http://localhost:8000`
+3. `npm i`
+4. `npm run start`
 
 ### Server
-1. `cd server`
-2. `npm i`
-3. `npm run dev`
+Starting in the root dir;
 
-A .env file is needed in the root of the server dir\
+1. `cd server`
+2. A .env file should be created in the root of the server dir, and the below keys should be added\
 `AUTH_TOKEN=mysecrettoken`\
 `PORT=8000`
-
-
+3. `npm i`
+4. `npm run dev`
 
 ## With more time I would like to
 - Add tests. I have basic testing knowledge, so I did not think it was worth implementing, since there is not too much to show off with. It is an area I need to improve on but I can definitly understand the benefit to using them. I have coded TDD in the past, which I think can be very beneficial.
