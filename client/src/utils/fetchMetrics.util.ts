@@ -5,9 +5,11 @@ export const fetchMetrics = async (
   // Add correct type
   try {
     setLoadingMetrics(true);
+    // add to .env
     const response = await fetch("http://localhost:8000/metrics", {
       headers: {
-        // add auth here
+        // add to .env
+        authorization: "mysecrettoken",
       },
     });
     const json = await response.text();

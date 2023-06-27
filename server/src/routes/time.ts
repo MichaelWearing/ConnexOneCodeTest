@@ -5,8 +5,11 @@ import TimeResponse from "../interfaces/TimeResponse";
 const router = Router();
 
 router.get("/", (req: Request, res: Response<TimeResponse>) => {
-  // Check for header Authorization = ‘mysecrettoken’
-  // Send code 403 if not present, continue otherwise
+  // Move auth to middle ware folder
+  const authorization = req.headers.authorization;
+  if (!authorization || authorization !== "mysecrettoken") {
+    res.sendStatus(403);
+  }
   res.send({
     properties: {
       epoch: {
