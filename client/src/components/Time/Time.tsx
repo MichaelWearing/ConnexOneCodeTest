@@ -20,16 +20,16 @@ const Time: React.FC<TimeType> = ({ time, setNewRequest, loadingTime }) => {
   // Ticks once per second
   useEffect(() => {
     const counterTick = setInterval(() => setCounter((prev) => prev + 1), 1000);
-    
+
     return () => clearInterval(counterTick);
   }, []);
-  
+
   // Every 30 seconds we make a new request to the server
   useEffect(() => {
     const counterTick = setInterval(() => {
       setCounter(() => 0);
       setNewRequest(true);
-    }, 5000); // Change to 30000
+    }, 30000);
 
     return () => clearInterval(counterTick);
   }, []);

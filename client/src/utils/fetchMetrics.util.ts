@@ -2,14 +2,11 @@ export const fetchMetrics = async (
   setTime: (callback: string) => void,
   setLoadingMetrics: (value: boolean) => void
 ) => {
-  // Add correct type
   try {
     setLoadingMetrics(true);
-    // add to .env
-    const response = await fetch("http://localhost:8000/metrics", {
+    const response = await fetch(`${process.env.REACT_APP_SERVER}/metrics`, {
       headers: {
-        // add to .env
-        authorization: "mysecrettoken",
+        authorization: `${process.env.REACT_APP_AUTH_TOKEN}`,
       },
     });
     const json = await response.text();

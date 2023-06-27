@@ -7,7 +7,7 @@ const router = Router();
 router.get("/", (req: Request, res: Response<TimeResponse>) => {
   // Move auth to middle ware folder
   const authorization = req.headers.authorization;
-  if (!authorization || authorization !== "mysecrettoken") {
+  if (!authorization || authorization !== process.env.AUTH_TOKEN) {
     res.sendStatus(403);
   }
   res.send({

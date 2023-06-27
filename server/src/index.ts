@@ -2,6 +2,7 @@ import express, { Application } from "express";
 import cors from "cors";
 const timeRouter = require("./routes/time");
 const metricsRouter = require("./routes/metrics");
+import "dotenv/config";
 
 const app: Application = express();
 

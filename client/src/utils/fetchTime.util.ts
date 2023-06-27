@@ -4,11 +4,9 @@ export const fetchTime = async (
 ) => {
   try {
     setLoadingTime(true);
-    // add to s.env
-    const response = await fetch("http://localhost:8000/time", {
+    const response = await fetch(`${process.env.REACT_APP_SERVER}/time`, {
       headers: {
-        // add to .env
-        authorization: "mysecrettoken",
+        authorization: `${process.env.REACT_APP_AUTH_TOKEN}`,
       },
     });
     const json = await response.json();
