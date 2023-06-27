@@ -6,7 +6,7 @@ export default interface TimeResponse {
     };
   };
   required: [String];
-  type: String;
+  type: String; // Change to object
   whereDoIPutThis: Number
 }
 

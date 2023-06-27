@@ -21,7 +21,6 @@ router.get("/", (req: Request, res: Response<TimeResponse>) => {
   });
 });
 
-
 // Move this logic out of file maybe
 const getCurrentTimeInSeconds = (): number => {
   const currentTime = new Date();
