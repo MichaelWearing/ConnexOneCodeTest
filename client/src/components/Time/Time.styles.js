@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  background: lime;
+  background: #50b79b;
 
   display: flex;
   flex-direction: column;
@@ -15,10 +15,14 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
+  color: #343f57;
+
   font-size: 40px;
 `;
 
 export const Text = styled.h3`
+  color: #343f57;
+
   font-size: 25px;
 `;
 
