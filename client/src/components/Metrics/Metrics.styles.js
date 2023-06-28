@@ -5,14 +5,19 @@ export const Wrapper = styled.div`
 
   position: fixed;
   right: 0;
+
   overflow: overlay;
 
   display: flex;
   align-items: center;
-  justify-content: center;
 
   height: 100vh;
   width: 50vw;
+`;
+
+export const PreTextWrapper = styled.pre`
+  padding-left: 1vw;
+  padding-top: 5vh;
 `;
 
 export const TextWrapper = styled.code`

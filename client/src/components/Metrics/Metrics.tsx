@@ -1,4 +1,4 @@
-import { Wrapper, TextWrapper } from "./Metrics.styles";
+import { Wrapper, PreTextWrapper, TextWrapper } from "./Metrics.styles";
 
 type MetricType = {
   metrics: string;
@@ -11,9 +11,9 @@ const Metrics: React.FC<MetricType> = ({ metrics, loadingMetrics }) => {
       {loadingMetrics ? (
         <TextWrapper>Loading</TextWrapper>
       ) : (
-        <pre>
+        <PreTextWrapper>
           <TextWrapper>{metrics}</TextWrapper>
-        </pre>
+        </PreTextWrapper>
       )}
     </Wrapper>
   );
