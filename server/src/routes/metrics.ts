@@ -1,4 +1,4 @@
-import { Router, Request, Response } from "express";
+import { Router } from "express";
 import promMid from "express-prometheus-middleware";
 
 const router = Router();
